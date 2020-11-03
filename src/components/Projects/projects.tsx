@@ -28,7 +28,7 @@ const projects: IProject[] = [
     description: 'My Portfolio Website',
     github: 'https://github.com/MichaelOlatunji/imyke.dev',
     live: 'https://imyke.dev',
-    stack: 'React + TypeScript',
+    stack: 'React + TypeScript + SASS',
     isPrivate: false,
     isLive: true,
   },
