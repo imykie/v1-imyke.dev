@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export default (initialValue: any, callback: Function) => {
+export default (initialValue: any, callback: (arg: any) => void) => {
   const [state, setState] = useState<any>(initialValue ?? null);
   useEffect(() => callback(state), [state]);
 
@@ -17,5 +17,5 @@ export default (initialValue: any, callback: Function) => {
 //   useImperativeHandle(ref, () => ({getMyState: () => {return myState}}), [myState]);
 // })
 
-// // you should be able to get myState in the Parent component by calling: 
+// // you should be able to get myState in the Parent component by calling:
 // myRef.current.getMyState();

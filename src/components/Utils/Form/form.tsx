@@ -37,9 +37,9 @@ export default class MyForm extends React.Component<any, IState> {
     };
   }
 
-  submitForm(ev: any) {
-    ev.preventDefault();
-    const form = ev.target;
+  submitForm(e: any) {
+    e.preventDefault();
+    const form = e.target;
     const data = new FormData(form);
     const xhr = new XMLHttpRequest();
     xhr.open(form.method, form.action);
