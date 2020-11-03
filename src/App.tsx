@@ -5,23 +5,28 @@ import Header from './components/Utils/Header/header';
 import Mobile from './components/Base/mobile';
 import Base from './components/Base/base';
 import Projects from './components/Projects/projects';
+import Contact from './components/Contact/contact';
 import Error from './components/Error/error404';
 
 function App() {
-  const [menu, setMenu] = useState<string[]>(['active_menu', '', '']);
+  const [menu, setMenu] = useState<string[]>(['active_menu', '', '', '']);
 
   const activeMenu = (id: number) => {
     switch (id) {
       case 0:
-        setMenu(() => ['active_menu', '', '']);
+        setMenu(() => ['active_menu', '', '', '']);
         break;
 
       case 1:
-        setMenu(() => ['', 'active_menu', '']);
+        setMenu(() => ['', 'active_menu', '', '']);
         break;
 
       case 2:
-        setMenu(() => ['', '', 'active_menu']);
+        setMenu(() => ['', '', 'active_menu', '']);
+        break;
+
+      case 3:
+        setMenu(() => ['', '', '', 'active_menu']);
         break;
 
       default:
@@ -38,6 +43,7 @@ function App() {
             <Switch>
               <Route exact path="/" render={(props) => <Mobile menu={menu} />} />
               <Route exact path="/projects" render={(props) => <Projects menu={menu} activeMenu={activeMenu} />} />
+              <Route exact path="/contact" render={(props) => <Contact menu={menu} activeMenu={activeMenu} />} />
               <Route component={Error} />
             </Switch>
           </div>
@@ -62,7 +68,8 @@ function App() {
             <div className="pages_container">
               <Switch>
                 <Route exact path="/" render={(props) => <Projects menu={menu} activeMenu={activeMenu} />} />
-                <Route exact path="/work" render={(props) => <Projects menu={menu} activeMenu={activeMenu} />} />
+                <Route exact path="/projects" render={(props) => <Projects menu={menu} activeMenu={activeMenu} />} />
+                <Route exact path="/contact" render={(props) => <Contact menu={menu} activeMenu={activeMenu} />} />
                 <Route component={Error} />
               </Switch>
             </div>

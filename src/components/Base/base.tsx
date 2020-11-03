@@ -38,25 +38,35 @@ export default function Base({ menu }: any) {
         <ul>
           <li className={menu[0]}>
             <small>
-              00
-              <Link to="/">
-                <img src={navLine} alt="menu bullet" /> PROJECTS
+              01
+              <Link to="/work">
+                <img src={navLine} alt="menu bullet" />
+                WORK EXPERIENCES
               </Link>
             </small>
           </li>
 
           <li className={menu[1]}>
             <small>
-              01
-              <Link to="/resume">
-                <img src={navLine} alt="menu bullet" /> RESUME
+              02
+              <Link to="/projects">
+                <img src={navLine} alt="menu bullet" /> PROJECTS
               </Link>
             </small>
           </li>
 
           <li className={menu[2]}>
             <small>
-              02
+              03
+              <Link to="/resume">
+                <img src={navLine} alt="menu bullet" /> RESUME
+              </Link>
+            </small>
+          </li>
+
+          <li className={menu[3]}>
+            <small>
+              04
               <Link to="/contact">
                 <img src={navLine} alt="menu bullet" /> CONTACT
               </Link>

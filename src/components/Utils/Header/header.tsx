@@ -36,7 +36,12 @@ export default function Header() {
               </li>
               <li>
                 <Link to="/work" onClick={toggleMenu}>
-                  Work
+                  Work Experience
+                </Link>
+              </li>
+              <li>
+                <Link to="/projects" onClick={toggleMenu}>
+                  Projects
                 </Link>
               </li>
               <li>

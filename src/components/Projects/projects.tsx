@@ -132,7 +132,7 @@ const projects: IProject[] = [
 
 export default function Projects(props: any) {
   useEffect(() => {
-    props.activeMenu(0);
+    props.activeMenu(1);
   }, []);
 
   return (
