@@ -71,7 +71,7 @@ const projects: IProject[] = [
     title: 'Capstone Project',
     description: 'Cloud DevOps Nanodegree Capstone Project (Udacity)',
     github: 'https://github.com/MichaelOlatunji/Cloud_DevOps_Nanodegree_Capstone',
-    live: ''
+    live: '',
     stack: 'AWS + Jenkins + Docker + Kubernetes + Python',
     isPrivate: false,
     isLive: false,
@@ -85,7 +85,7 @@ const projects: IProject[] = [
     live: '',
     stack: 'Flask + AWS + Jenkins + Docker + Kubernetes + Circle CI',
     isPrivate: false,
-    isLive: true,
+    isLive: false,
   },
 
   {
