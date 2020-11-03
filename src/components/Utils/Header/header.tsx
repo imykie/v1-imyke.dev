@@ -12,11 +12,11 @@ export default function Header() {
     <div id="header">
       <div className="header_wrapper">
         <div className="logo_container">
-          <a href="https://imyke.dev">
+          <Link to="/">
             <span className="pt-4 pl-4 text-xl font-bold">
               <img className="w-32" src={logo} alt="imyke logo" />
             </span>
-          </a>
+          </Link>
         </div>
 
         <div className="menu_btn_wrapper">

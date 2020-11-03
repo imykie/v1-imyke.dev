@@ -17,13 +17,13 @@ export default function Contact(props: IProp) {
     <div className="contact">
       <Form />
       <div className="go_button_container">
-        <Link to="/projects">
+        <Link to="/resume">
           <button>
-            <b>➜ </b> Work
+            <b>➜ </b> Résumé
           </button>
         </Link>
-        <Link to="/resume">
-          <button> Resume ➜ </button>
+        <Link to="/">
+          <button> Home ➜ </button>
         </Link>
       </div>
     </div>

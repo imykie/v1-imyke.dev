@@ -154,8 +154,8 @@ export default function Projects(props: IProp) {
             <b>➜ </b> Home
           </button>
         </Link>
-        <Link to="/contact">
-          <button>Contact ➜ </button>
+        <Link to="/resume">
+          <button>Résumé ➜ </button>
         </Link>
       </div>
     </div>

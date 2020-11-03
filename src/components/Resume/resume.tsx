@@ -216,6 +216,19 @@ export default function Resume(props: IProp) {
         </div>
 
         <div className="divider">
+          <p>Hobbies</p>
+          <span></span>
+        </div>
+
+        <div className="exp_container">
+          <section className="experience">
+            <article className="description">
+              <p>Learning, Music, Football</p>
+            </article>
+          </section>
+        </div>
+
+        <div className="divider">
           <p>Projects</p>
           <span></span>
         </div>
@@ -232,13 +245,13 @@ export default function Resume(props: IProp) {
       </div>
 
       <div className="go_button_container">
-        <Link to="/contact">
+        <Link to="/projects">
           <button>
-            <b>➜ </b> Contact
+            <b>➜ </b> Projects
           </button>
         </Link>
-        <Link to="/">
-          <button>Home ➜ </button>
+        <Link to="/contact">
+          <button>Contact ➜ </button>
         </Link>
       </div>
     </div>
