@@ -28,7 +28,7 @@ export default function Base({ menu }: any) {
         </div>
 
         <div className="go_button_container">
-          <Link to="/work">
+          <Link to="/projects">
             <button className="explore">Explore ➜</button>
           </Link>
         </div>
@@ -40,7 +40,7 @@ export default function Base({ menu }: any) {
             <small>
               00
               <Link to="/">
-                <img src={navLine} alt="menu bullet" /> WORK
+                <img src={navLine} alt="menu bullet" /> PROJECTS
               </Link>
             </small>
           </li>
@@ -66,7 +66,7 @@ export default function Base({ menu }: any) {
       </nav>
 
       <div className="footer">
-        <img src={logo} alt="" />
+        {/* <img src={logo} alt="" /> */}
         <div className="social">
           <a href="https://github.com/MichaelOlatunji" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i> Github
@@ -76,22 +76,10 @@ export default function Base({ menu }: any) {
           <a href="https://twitter.com/_imyke" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-twitter"></i> Twitter <img src={arrow} alt="pointer" />
           </a>
-        </div>
 
-        <div className="credits">
-          <p>
-            Inspired by
-            <a href="https://sarahdayan.dev/" target="_blank" rel="noreferrer noopener">
-              Sarah Dayan.
-            </a>
-          </p>
-
-          <p>
-            Design by
-            <a href="https://dribbble.com/NicolasMzrd" target="_blank" rel="noreferrer noopener">
-              Nicolas Meuzard.
-            </a>
-          </p>
+          <a href="https://linkedin.com/in/imykel" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin"></i> LinkedIn <img src={arrow} alt="pointer" />
+          </a>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ export default function Mobile({ menu }: any) {
     return () => {
       document.querySelector('.mobile_container')?.classList.remove('set_height');
     };
-  });
+  }, []);
 
   return (
     <div id="mobile">

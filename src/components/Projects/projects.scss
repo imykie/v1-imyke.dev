@@ -1,0 +1,28 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  
+    .go_button_container {
+        display: none;
+    }
+  
+    .portfolio_showcase {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+  
+    .go_button_container {
+        display: none;
+    }
+} 
+ 
+@media (max-width: 993px) {
+    .project {
+      margin: 30px 0;
+        .go_button_container {
+            display: flex;
+        }
+    }
+}

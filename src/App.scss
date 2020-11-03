@@ -46,20 +46,20 @@ html, body {
   overflow: hidden;
 }
 
-.container {
+.app-container {
   height: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.container .fixed {
+.app-container .m-fixed {
   height: 100vh; 
   width: 50%;
   display: flex;
   justify-content: center;
 }
 
-.container .main {
+.app-container .main {
   height: 100%;
   width: 50%;
   overflow-y: auto;
@@ -85,7 +85,7 @@ html, body {
   background: #555; 
 }
 
-.container .main .pages_container {
+.app-container .main .pages_container {
   padding: 8% 15% 8% 5%;
   flex-grow: 1;
   /* height: 100%; */
@@ -137,11 +137,11 @@ body {
 }
 
 @media (min-width: 994px) and (max-width: 1200px) {
-  .App .container .fixed .base_container {
+  .App .app-container .fixed .base_container {
     padding-left: 8%;
   }
 
-  .App .container .main .pages_container  {
+  .App .app-container .main .pages_container  {
     padding-right: 8%;
   }
 
@@ -160,7 +160,7 @@ body {
     overflow: auto;
   }
 
-  .App .container {
+  .App .app-container {
     display: none;
   }
 
