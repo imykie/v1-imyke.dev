@@ -98,7 +98,7 @@ const projects: IProject[] = [
   {
     id: uuid(),
     title: 'Promotion Tracker',
-    description: 'A demo software that can be used to tracker teaching staffs promotion in a college',
+    description: 'A demo software that is used to track staffs promotions in a college',
     github: 'https://github.com/MichaelOlatunji/promotion-app',
     github2: 'https://github.com/MichaelOlatunji/promotion-app-db',
     live: '',

@@ -14,7 +14,7 @@ interface IProject {
 }
 
 export default function Project(props: IProject) {
-  const { title, description, github, live, stack, isPrivate, isLive } = props;
+  const { title, description, github, live, stack, isPrivate, isLive, github2 } = props;
 
   return (
     <div className="box_container md:hover:shadow-xs md:hover:z-50 md:group-hover:opacity-50 md:hover:opacity-important">
@@ -39,11 +39,22 @@ export default function Project(props: IProject) {
           {isPrivate ? (
             ''
           ) : (
-            <small>
-              <a href={github} target="_blank" rel="noopener noreferrer">
-                <i className="fas fa-code-branch"></i> Code
-              </a>
-            </small>
+            <span>
+              <small>
+                <a href={github} target="_blank" rel="noopener noreferrer">
+                  <i className="fas fa-code-branch"></i> {github2 ? 'FE Code' : 'Code'}
+                </a>
+              </small>
+              {github2 ? (
+                <small>
+                  <a href={github2} target="_blank" rel="noopener noreferrer">
+                    <i className="fas fa-code-branch"></i> BE Code
+                  </a>
+                </small>
+              ) : (
+                ''
+              )}
+            </span>
           )}
         </div>
       </div>
