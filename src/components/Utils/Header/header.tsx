@@ -13,7 +13,7 @@ export default function Header() {
       <div className="header_wrapper">
         <div className="logo_container">
           <a href="https://imyke.dev">
-            {/* <img src={logo} alt="imyke logo" /> */} <span className="font-bold pl-4 text-xl pt-4">iMyke</span>
+            {/* <img src={logo} alt="imyke logo" /> */} <span className="pt-4 pl-4 text-xl font-bold">iMyke</span>
           </a>
         </div>
 
@@ -32,11 +32,6 @@ export default function Header() {
               <li>
                 <Link to="/" onClick={toggleMenu}>
                   Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/work" onClick={toggleMenu}>
-                  Work Experience
                 </Link>
               </li>
               <li>

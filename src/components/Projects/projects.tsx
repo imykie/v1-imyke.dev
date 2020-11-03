@@ -16,6 +16,11 @@ interface IProject {
   isLive: boolean;
 }
 
+interface IProp {
+  menu?: string[];
+  activeMenu: (arg: number) => void;
+}
+
 const projects: IProject[] = [
   {
     id: uuid(),
@@ -130,9 +135,9 @@ const projects: IProject[] = [
   },
 ];
 
-export default function Projects(props: any) {
+export default function Projects(props: IProp) {
   useEffect(() => {
-    props.activeMenu(1);
+    props.activeMenu(0);
   }, []);
 
   return (

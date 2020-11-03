@@ -10,7 +10,7 @@ interface IProp {
 
 export default function Contact(props: IProp) {
   useEffect(() => {
-    props.activeMenu(3);
+    props.activeMenu(2);
   }, []);
 
   return (
