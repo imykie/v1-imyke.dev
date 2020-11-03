@@ -179,3 +179,21 @@ body {
   }
 
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .loader {
+      animation: slide infinite 1.5s linear
+  }
+}
+
+@keyframes slide {
+  from {
+      transform: scale(1);
+      opacity: 0;
+  }
+
+  to {
+      transform: scale(2);
+      opacity: 1;
+  }
+}
