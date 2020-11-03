@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import logo from '../../../assets/svgs/image.svg';
+import logo from '../../../assets/svgs/logo.svg';
 import { Link } from 'react-router-dom';
 import './header.scss';
 
@@ -13,7 +13,9 @@ export default function Header() {
       <div className="header_wrapper">
         <div className="logo_container">
           <a href="https://imyke.dev">
-            {/* <img src={logo} alt="imyke logo" /> */} <span className="pt-4 pl-4 text-xl font-bold">iMyke</span>
+            <span className="pt-4 pl-4 text-xl font-bold">
+              <img className="w-32" src={logo} alt="imyke logo" />
+            </span>
           </a>
         </div>
 

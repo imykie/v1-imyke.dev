@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './base.scss';
-import avi from '../../assets/svgs/avi.svg';
+import myPic from '../../assets/svgs/my-pic.jpg';
 import navLine from '../../assets/svgs/menu-line.svg';
-import logo from '../../assets/svgs/avismall.svg';
 import arrow from '../../assets/svgs/arrow.svg';
 
 export default function Base({ menu }: any) {
@@ -14,7 +13,9 @@ export default function Base({ menu }: any) {
           <h1>
             Hello! I'm <br /> Michael Olatunji.
           </h1>
-          <div className="avi">{/* <img src={avi} alt="avatar" /> */}</div>
+          <div className="my-pic">
+            <img className="w-48 h-48 rounded-full" src={myPic} alt="my-avatar" />
+          </div>
         </div>
 
         <div className="description">
@@ -66,7 +67,7 @@ export default function Base({ menu }: any) {
       </nav>
 
       <div className="footer">
-        {/* <img src={logo} alt="" /> */}
+        <img className="w-16 h-16 rounded-full" src={myPic} alt="" />
         <div className="social">
           <a href="https://github.com/MichaelOlatunji" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i> Github

@@ -22,7 +22,7 @@
         margin-bottom: 0;
     }
 
-    .avi {
+    .my-pic {
         display: none;
     }
 }
@@ -136,8 +136,6 @@ nav {
   /* flex-direction: column; */
 
     img {
-        width: fit-content;
-        max-width: 70%;
         margin-right: 15px;
     }
 
@@ -196,7 +194,7 @@ nav {
 }
 
 @media (max-width: 993px) {
-  .intro_box .avi {
+  .intro_box .my-pic {
     display: initial;
   }
 
