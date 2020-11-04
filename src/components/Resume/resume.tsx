@@ -25,7 +25,7 @@ export default function Resume(props: IProp) {
               </small>
             </a>
             <a
-              href="https://drive.google.com/file/d/1ls56kMQoFVEzARKJJPYiSl_hAqnhA6n6/view?usp=sharing"
+              href="https://drive.google.com/file/d/1bP6qUqPQXLbDRLD63Kn1fB9IP2OmW8Jq/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -94,18 +94,18 @@ export default function Resume(props: IProp) {
             </p>
             <article className="description">
               <p>
-                <span>■</span> Designed user friendly websites with tools and integration to meet multiple browser, and
+                <span>⯁</span> Designed user friendly websites with tools and integration to meet multiple browser, and
                 different screens user needs.
               </p>
               <p>
-                <span>■</span> Monitored automated build and continuous software integration process to build/release
+                <span>⯁</span> Monitored automated build and continuous software integration process to build/release
                 failure resolution.
               </p>
               <p>
-                <span>■</span> Used Jenkins, Docker, Kubernetes to deploy and manage microservices on AWS EKS.
+                <span>⯁</span> Used Jenkins, Docker, Kubernetes to deploy and manage microservices on AWS EKS.
               </p>
               <p>
-                <span>■</span> Monitored and tested deployments.
+                <span>⯁</span> Monitored and tested deployments.
               </p>
             </article>
           </section>
@@ -120,17 +120,17 @@ export default function Resume(props: IProp) {
             <article className="description">
               <p>I contributed in developing user interfaces for quite a number of products within three months. </p>
               <p>
-                <span>■</span> Developed websites compatible with multiple browsers.
+                <span>⯁</span> Developed websites compatible with multiple browsers.
               </p>
               <p>
-                <span>■</span> Developed designs to meet specific requirements such as quick-loading sites with
+                <span>⯁</span> Developed designs to meet specific requirements such as quick-loading sites with
                 particular layouts.
               </p>
               <p>
-                <span>■</span> Designed and updated layouts to meet usability and performance requirements.
+                <span>⯁</span> Designed and updated layouts to meet usability and performance requirements.
               </p>
               <p>
-                <span>■</span> Worked with Project Manager, Developers, UI designers to resolve technical issues.
+                <span>⯁</span> Worked with Project Manager, Developers, UI designers to resolve technical issues.
               </p>
             </article>
           </section>
@@ -148,16 +148,16 @@ export default function Resume(props: IProp) {
                 projects
               </p>
               <p>
-                <span>■</span>Produced clean, validation-ready code for given project needs.
+                <span>⯁</span>Produced clean, validation-ready code for given project needs.
               </p>
               <p>
-                <span>■</span> Built a basic Banking Web Application with Angular and PHP.
+                <span>⯁</span> Built a basic Banking Web Application with Angular and PHP.
               </p>
               <p>
-                <span>■</span> Built Car Racing game using JavaScript and HTML5 canvas.
+                <span>⯁</span> Built Car Racing game using JavaScript and HTML5 canvas.
               </p>
               <p>
-                <span>■</span> Built Scientific Calculator, Timer, Countdown on the Web in my early days and many other
+                <span>⯁</span> Built Scientific Calculator, Timer, Countdown on the Web in my early days and many other
                 self development Projects.
               </p>
             </article>
