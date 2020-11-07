@@ -68,8 +68,8 @@
 }
 
 .menu_btn:focus {
-outline: none;
-box-shadow: none;
+    outline: none;
+    box-shadow: none;
 }
 
 /*====== NAV MENU STYLES =====*/
@@ -123,7 +123,10 @@ box-shadow: none;
         margin: 20px 0;
         align-items: center;
         flex-direction: column;
-    
+        
+        a {
+            color: grey;
+        }
         .social_icons {
             display: flex;
             justify-content: center;

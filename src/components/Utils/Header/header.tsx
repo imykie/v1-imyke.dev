@@ -11,11 +11,9 @@ export default function Header() {
   return (
     <div id="header">
       <div className="header_wrapper">
-        <div className="logo_container">
+        <div className="logo_container pt-4">
           <Link to="/">
-            <span className="pt-4 pl-4 text-xl font-bold">
-              <img className="w-32" src={logo} alt="imyke logo" />
-            </span>
+            <img className="w-32" src={logo} alt="imyke logo" />
           </Link>
         </div>
 
@@ -55,6 +53,9 @@ export default function Header() {
 
             <div className="social_box">
               <h3>Connect With Me</h3>
+              <a href="mailto:hello@imyke.dev" className="mt-4">
+                hello@imyke.dev
+              </a>
               <div className="social_icons">
                 <a href="https://github.com/MichaelOlatunji">
                   <i className="fab fa-github"></i>
