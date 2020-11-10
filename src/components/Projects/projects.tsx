@@ -114,7 +114,7 @@ const projects: IProject[] = [
 
   {
     id: uuid(),
-    title: 'Vertical Full page Slider',
+    title: 'Vertical Full Page Slider',
     description: 'A responsive fullpage slider similar to fullpage.js',
     github: 'https://github.com/MichaelOlatunji/vertical-slider',
     live: 'https://vertical-slider.netlify.app/',
