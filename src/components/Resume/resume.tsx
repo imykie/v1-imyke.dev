@@ -25,7 +25,7 @@ export default function Resume(props: IProp) {
               </small>
             </a>
             <a
-              href="https://drive.google.com/file/d/1bP6qUqPQXLbDRLD63Kn1fB9IP2OmW8Jq/view?usp=sharing"
+              href="https://drive.google.com/file/d/1q4eGB69lMW151QrFVTBOh7-ORSDJRo6t/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -58,7 +58,7 @@ export default function Resume(props: IProp) {
           </p>
           <p className="">
             <span className="pr-2 font-bold text-white">Framework/Libraries: </span> React, Vue, Nodejs, Nestjs,
-            Firebase, GraphQL Angular
+            Firebase, GraphQL, Angular
           </p>
           <p className="">
             <span className="pr-2 font-bold text-white">Storage/Database: </span> SQL, Postgres, MongoDB, Firestore, AWS
