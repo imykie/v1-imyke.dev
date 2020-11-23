@@ -1,6 +1,5 @@
 import React, { Component, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { isPropertySignature } from 'typescript';
 import './resume.scss';
 
 interface IProp {
