@@ -1,4 +1,5 @@
 import React, { Component, useEffect } from 'react';
+import Helmet from '../Utils/SEO/helmet';
 import { Link } from 'react-router-dom';
 import './projects.scss';
 import Project from '../Utils/Project/project';
@@ -142,6 +143,7 @@ export default function Projects(props: IProp) {
 
   return (
     <div className="project">
+      <Helmet title="Projects" name="Selected Projects" content="Selected Michael Olatunji's Projects" />
       <div className="group portfolio_showcase">
         {projects.map((project) => (
           <Project key={project.id} {...project} />

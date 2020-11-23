@@ -1,4 +1,5 @@
 import React, { Component, useEffect } from 'react';
+import Helmet from '../Utils/SEO/helmet';
 import { Link } from 'react-router-dom';
 import './resume.scss';
 
@@ -14,6 +15,7 @@ export default function Resume(props: IProp) {
 
   return (
     <div className="resume">
+      <Helmet title="Resume" name="Michael Olatunji Resume" content="Michael Olatunji - Software Engineer Resume" />
       <div className="resume_container">
         <div className="top_row">
           <h2>Michael Olatunji</h2>
