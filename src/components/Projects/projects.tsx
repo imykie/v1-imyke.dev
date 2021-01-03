@@ -33,7 +33,16 @@ const projects: IProject[] = [
     isPrivate: false,
     isLive: true,
   },
-
+  {
+    id: uuid(),
+    title: 'Afide',
+    description: 'Agricultural financial inclusion for daily earners',
+    github: '',
+    live: 'https://afide.ng',
+    stack: 'Vue + Nodejs + MySQL',
+    isPrivate: true,
+    isLive: true,
+  },
   {
     id: uuid(),
     title: 'Brandzoos',
@@ -44,7 +53,6 @@ const projects: IProject[] = [
     isPrivate: true,
     isLive: true,
   },
-
   {
     id: uuid(),
     title: 'Listed.ng',
@@ -55,7 +63,6 @@ const projects: IProject[] = [
     isPrivate: true,
     isLive: true,
   },
-
   {
     id: uuid(),
     title: 'Realtime Form',
@@ -66,7 +73,6 @@ const projects: IProject[] = [
     isPrivate: false,
     isLive: true,
   },
-
   {
     id: uuid(),
     title: 'Capstone Project',
@@ -77,7 +83,6 @@ const projects: IProject[] = [
     isPrivate: false,
     isLive: false,
   },
-
   {
     id: uuid(),
     title: 'Operationalized ML API',
@@ -88,19 +93,17 @@ const projects: IProject[] = [
     isPrivate: false,
     isLive: false,
   },
-
-  {
-    id: uuid(),
-    title: 'Banking App',
-    description: 'A demo bank application that performs basic bank transactions',
-    github: 'https://github.com/MichaelOlatunji/banking-app',
-    github2: 'https://github.com/MichaelOlatunji/banking-app-db',
-    live: '',
-    stack: 'Angular + PHP',
-    isPrivate: false,
-    isLive: false,
-  },
-
+  // {
+  //   id: uuid(),
+  //   title: 'Banking App',
+  //   description: 'A demo bank application that performs basic bank transactions',
+  //   github: 'https://github.com/MichaelOlatunji/banking-app',
+  //   github2: 'https://github.com/MichaelOlatunji/banking-app-db',
+  //   live: '',
+  //   stack: 'Angular + PHP',
+  //   isPrivate: false,
+  //   isLive: false,
+  // },
   {
     id: uuid(),
     title: 'Promotion Tracker',
@@ -112,7 +115,6 @@ const projects: IProject[] = [
     isPrivate: false,
     isLive: false,
   },
-
   {
     id: uuid(),
     title: 'Vertical Full Page Slider',
@@ -123,7 +125,6 @@ const projects: IProject[] = [
     isPrivate: false,
     isLive: true,
   },
-
   {
     id: uuid(),
     title: 'Car Racing Game',
@@ -143,7 +144,7 @@ export default function Projects(props: IProp) {
 
   return (
     <div className="project">
-      <Helmet title="Projects" name="Selected Projects" content="Selected Michael Olatunji's Projects" />
+      <Helmet title="My Projects" name="Selected Projects" content="Selected Michael Olatunji's Projects" />
       <div className="group portfolio_showcase">
         {projects.map((project) => (
           <Project key={project.id} {...project} />

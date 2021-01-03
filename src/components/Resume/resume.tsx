@@ -15,16 +15,16 @@ export default function Resume(props: IProp) {
 
   return (
     <div className="resume">
-      <Helmet title="Resume" name="Michael Olatunji Resume" content="Michael Olatunji - Software Engineer Resume" />
+      <Helmet title="My Resume" name="Michael Olatunji Resume" content="Michael Olatunji - Software Engineer Resume" />
       <div className="resume_container">
         <div className="top_row">
           <h2>Michael Olatunji</h2>
           <div className="buttons">
-            <a href="https://www.linkedin.com/in/imykel" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://www.linkedin.com/in/imykel" target="_blank" rel="noopener noreferrer">
               <small>
                 <i className="fab fa-linkedin"></i> <span>Linked In</span>
               </small>
-            </a>
+            </a> */}
             <a
               href="https://drive.google.com/file/d/1lkueOoIsCGyRn0RBBHzlt4tKPmcod5Xv/view?usp=sharing"
               target="_blank"
