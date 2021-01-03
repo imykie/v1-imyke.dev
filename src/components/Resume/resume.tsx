@@ -37,7 +37,7 @@ export default function Resume(props: IProp) {
           </div>
         </div>
 
-        <p className="subheading">Software Engineer | Cloud DevOps Engineer</p>
+        <p className="subheading">Software Engineer | DevOps Engineer</p>
 
         <div className="summary">
           <p>
@@ -66,13 +66,14 @@ export default function Resume(props: IProp) {
             S3, Cloud Storage
           </p>
           <p className="">
-            <span className="pr-2 font-bold text-white">Infrastructure: </span> AWS, GCP, CloudFormation, Ansible
+            <span className="pr-2 font-bold text-white">Infrastructure: </span> AWS, GCP, CloudFormation, Terraform
           </p>
           <p className="">
             <span className="pr-2 font-bold text-white">Tooling: </span> Linux, Git, Docker, Kubernetes
           </p>
           <p className="">
-            <span className="pr-2 font-bold text-white">Automation Tools: </span> Jenkins, Circleci, Travis-ci
+            <span className="pr-2 font-bold text-white">Automation Tools: </span> Jenkins, Circleci, Travis-ci, GitLab
+            ci
           </p>
           <p className="">
             <span className="pr-2 font-bold text-white">Monitoring and testing tools: </span> Cloudwatch, Stackdriver,
@@ -88,9 +89,26 @@ export default function Resume(props: IProp) {
         <div className="exp_container">
           <section className="experience">
             <p className="title">
-              Powerjamb - Software Engineer and Cloud DevOps Engineer
+              Block Knowledge - Software and DevOps Engineer
               <span>
-                <br /> JUNE 2019
+                <br /> DEC 2020 - CURRENT
+              </span>
+            </p>
+            <article className="description">
+              <p>
+                <span>&#x2756;</span> Working with the engineering team to solve various problems
+              </p>
+              <p>
+                <span>&#x2756;</span> Working with GitLab CI/CD, AWS and other tools and platforms
+              </p>
+            </article>
+          </section>
+
+          <section className="experience">
+            <p className="title">
+              Powerjamb - Software and DevOps Engineer
+              <span>
+                <br /> JUNE 2019 - SEPT 2020
               </span>
             </p>
             <article className="description">
@@ -238,7 +256,10 @@ export default function Resume(props: IProp) {
           <section className="experience">
             <article className="description">
               <p>
-                Some of my works can be found at <span> </span> <Link to="/projects">imyke.dev/projects</Link>
+                Some of my works can be found <span> </span>
+                <span className="underline">
+                  <Link to="/projects"> here</Link>
+                </span>
               </p>
             </article>
           </section>
