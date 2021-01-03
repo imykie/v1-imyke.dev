@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# imyke.dev
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a portfolio website project available at https://imyke.dev
 
-## Available Scripts
+After cloning
 
 In the project directory, you can run:
 
