@@ -96,10 +96,19 @@ export default function Resume(props: IProp) {
             </p>
             <article className="description">
               <p>
-                <span>&#x2756;</span> Working with the engineering team to solve various problems
+                <span>&#x2756;</span> Working on a financial social platform that allows group of individuals to donate
+                to NGOs or as a tribe.
               </p>
               <p>
-                <span>&#x2756;</span> Working with GitLab CI/CD, AWS and other tools and platforms
+                <span>&#x2756;</span> Worked on pipeline using Gitlab-ci to run tests, build container image, push and
+                deploy container image to AWS container service and to automate mobile app deployment to PlayStore and
+                AppStore using fastlane.
+              </p>
+              <p>
+                <span>&#x2756;</span> Integrated plaid and stripe for the backend solution.
+              </p>
+              <p>
+                <span>&#x2756;</span> Set up development, production and failover server on AWS for the web application.
               </p>
             </article>
           </section>
