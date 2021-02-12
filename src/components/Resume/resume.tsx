@@ -26,7 +26,7 @@ export default function Resume(props: IProp) {
               </small>
             </a> */}
             <a
-              href="https://drive.google.com/file/d/1lkueOoIsCGyRn0RBBHzlt4tKPmcod5Xv/view?usp=sharing"
+              href="https://drive.google.com/file/d/1W-navLEo1q5VCmyuJx6qRI-0_dh2Ek39/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
