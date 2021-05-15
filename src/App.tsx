@@ -60,7 +60,7 @@ function App() {
               </Switch>
             </div>
             <div className="social_buttons">
-              <a href="https://github.com/MichaelOlatunji" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/imykie" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github"></i>
               </a>
               <a href="https://twitter.com/_imyke" target="_blank" rel="noopener noreferrer">
