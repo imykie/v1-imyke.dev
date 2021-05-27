@@ -69,7 +69,7 @@ export default function Base({ menu }: any) {
       <div className="footer">
         <img className="w-16 h-16 rounded-full" src={myPic} alt="" />
         <div className="social">
-          <a href="https://github.com/MichaelOlatunji" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/imykie" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i> Github
             <img src={arrow} alt="pointer" />
           </a>
