@@ -19,6 +19,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    'react/no-unescaped-entities': 'off',
     'prettier/prettier': [
       'error',
       {
