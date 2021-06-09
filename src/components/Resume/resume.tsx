@@ -1,6 +1,6 @@
-import React, { Component, useEffect } from 'react';
-import Helmet from '../Utils/SEO/helmet';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Helmet from '../Utils/SEO/helmet';
 import './resume.scss';
 
 interface IProp {
@@ -26,7 +26,7 @@ export default function Resume(props: IProp) {
               </small>
             </a> */}
             <a
-              href="https://drive.google.com/file/d/1W-navLEo1q5VCmyuJx6qRI-0_dh2Ek39/view?usp=sharing"
+              href="https://drive.google.com/file/d/1nmfoUiP1vzXIuBk8h84ylz8DO9GxhEvH/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
