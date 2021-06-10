@@ -96,8 +96,8 @@ export default function Resume(props: IProp) {
             </p>
             <article className="description">
               <p>
-                <span>&#x2756;</span> Working on a financial social platform that allows group of individuals to donate
-                to NGOs or as a tribe.
+                <span>&#x2756;</span> Working on a financial social platform that allows people to donate to Charities,
+                Churches, Schools and NGOs.
               </p>
               <p>
                 <span>&#x2756;</span> Worked on pipeline using Gitlab-ci to run tests, build container image, push and
