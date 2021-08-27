@@ -1,9 +1,9 @@
-import React, { Component, useEffect } from 'react';
-import Helmet from '../Utils/SEO/helmet';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './projects.scss';
-import Project from '../Utils/Project/project';
 import { v4 as uuid } from 'uuid';
+import Project from '../Utils/Project/project';
+import Helmet from '../Utils/SEO/helmet';
+import './projects.scss';
 
 interface IProject {
   id: string;
@@ -65,13 +65,33 @@ const projects: IProject[] = [
   },
   {
     id: uuid(),
-    title: 'Realtime Form',
-    description: 'A single page app that sync with firestore in realtime',
-    github: 'https://github.com/MichaelOlatunji/realtime-form-sync-firestore',
-    live: 'https://realtime-form-sync.netlify.app',
-    stack: 'Vue + TypeScript + Vuex + Vuexfire + Firestore',
+    title: 'Site Map Builder',
+    description: 'A sitemap builder',
+    github: 'https://github.com/imykie/sitemap-builder',
+    live: '',
+    stack: 'Go',
     isPrivate: false,
-    isLive: true,
+    isLive: false,
+  },
+  {
+    id: uuid(),
+    title: 'Task',
+    description: 'A CLI task manager',
+    github: 'https://github.com/imykie/task',
+    live: '',
+    stack: 'Go',
+    isPrivate: false,
+    isLive: false,
+  },
+  {
+    id: uuid(),
+    title: 'Tic Tac Toe',
+    description: 'Tic Tac Toe game',
+    github: 'https://github.com/imykie/tic-tac-toe-go',
+    live: '',
+    stack: 'Go',
+    isPrivate: false,
+    isLive: false,
   },
   {
     id: uuid(),
@@ -92,48 +112,6 @@ const projects: IProject[] = [
     stack: 'Flask + AWS + Jenkins + Docker + Kubernetes + Circle CI',
     isPrivate: false,
     isLive: false,
-  },
-  // {
-  //   id: uuid(),
-  //   title: 'Banking App',
-  //   description: 'A demo bank application that performs basic bank transactions',
-  //   github: 'https://github.com/MichaelOlatunji/banking-app',
-  //   github2: 'https://github.com/MichaelOlatunji/banking-app-db',
-  //   live: '',
-  //   stack: 'Angular + PHP',
-  //   isPrivate: false,
-  //   isLive: false,
-  // },
-  {
-    id: uuid(),
-    title: 'Promotion Tracker',
-    description: 'A demo software that is used to track staffs promotions in a college',
-    github: 'https://github.com/MichaelOlatunji/promotion-app',
-    github2: 'https://github.com/MichaelOlatunji/promotion-app-db',
-    live: '',
-    stack: 'Angular + Nodejs',
-    isPrivate: false,
-    isLive: false,
-  },
-  {
-    id: uuid(),
-    title: 'Vertical Full Page Slider',
-    description: 'A responsive fullpage slider similar to fullpage.js',
-    github: 'https://github.com/MichaelOlatunji/vertical-slider',
-    live: 'https://vertical-slider.netlify.app/',
-    stack: 'Vanilla JS + HTML + CSS',
-    isPrivate: false,
-    isLive: true,
-  },
-  {
-    id: uuid(),
-    title: 'Car Racing Game',
-    description: 'Opensourse responsive navbar component',
-    github: 'https://github.com/MichaelOlatunji/kadnavbar',
-    live: '',
-    stack: 'Vanilla JS + HTML5 Canvas',
-    isPrivate: false,
-    isLive: true,
   },
 ];
 
