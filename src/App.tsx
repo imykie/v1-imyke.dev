@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import './App.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import './App.scss';
 import logo from './assets/svgs/m-imyke.svg';
-import Header from './components/Utils/Header/header';
-import Mobile from './components/Base/mobile';
 import Base from './components/Base/base';
-import Projects from './components/Projects/projects';
+import Mobile from './components/Base/mobile';
 import Contact from './components/Contact/contact';
 import Error from './components/Error/error404';
+import Projects from './components/Projects/projects';
 import Resume from './components/Resume/resume';
+import Header from './components/Utils/Header/header';
 
 function App() {
   const [menu, setMenu] = useState<string[]>(['active_menu', '', '']);
