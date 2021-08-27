@@ -17,7 +17,7 @@ export default function Project(props: IProject) {
   const { title, description, github, live, stack, isPrivate, isLive, github2 } = props;
 
   return (
-    <div className="box_container md:hover:shadow-xs md:hover:z-50 md:group-hover:opacity-50 md:hover:opacity-important">
+    <div className="box_container md:hover:shadow-xs md:hover:z-50">
       <div className="box">
         <div className="project_details">
           <h3> {title} </h3>

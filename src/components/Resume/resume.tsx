@@ -8,6 +8,70 @@ interface IProp {
   activeMenu: (arg: number) => void;
 }
 
+interface IResume {
+  company: string;
+  role: string;
+  startDate: string;
+  endDate: string;
+  achievements: string[];
+}
+
+const resume: IResume[] = [
+  {
+    company: 'Block Knowledge',
+    role: 'Software and DevOps Engineer',
+    startDate: 'DEC 2020',
+    endDate: '',
+    achievements: [
+      'Designed the database and system architecture for Kadogo (turn everyday purchases into charitable donations)',
+      'Leading the kadogo backend team.',
+      'Optimized the backend to leverage on cloud services like serverless functions and messaging systems to increase performance and prevent downtime of critical part of the application.',
+      'Developed APIs for the mobile application, merchant and NGO dashboard.',
+      'Facilitated the use of continuous integration and continuous deployment tools to reduce code shipping time and increase collaboration and productivity among the developers.',
+      'Implemented the spare change and cashback donation algorithms.',
+      'Coached and mentored 2 interns.',
+      'Set up Autoscaling, Load balancers and failover servers on AWS for development, staging, production environment.',
+    ],
+  },
+  {
+    company: 'FarmKonnect Agric Business Nig. Ltd',
+    role: 'Software Engineer (Contract)',
+    startDate: 'SEPT 2020',
+    endDate: 'DEC 2020',
+    achievements: [
+      'Co-designed the database and system architecture for Afide. An inclusive financial platform for daily earners.',
+      'Developed the web application that facilitate transactions and payment on the platform.',
+      'Developed 4 dashboards for end to end activity of the platforms (Admin, User, Agent, Cooperative Admin Dashboards)',
+    ],
+  },
+  {
+    company: 'Powerjamb',
+    role: 'Software and DevOps Engineer',
+    startDate: 'JUNE 2019',
+    endDate: 'SEPT 2020',
+    achievements: [
+      'Managed infrastructure as code using AWS CloudFormation.',
+      'Redesigned the landing page.',
+      'Developed a web mobile first examination application.',
+      'Created Dockerfiles and built docker images for microservices to run on kubernetes cluster.',
+      'Created and managed the deployment of microservices cluster to EKS using docker, kubernetes, helm and Jenkins.',
+      'Experience with Amazon services such as AWS, VPC, S3, EC2 Relational Database (RDS), Document DB, Elastic Load Balancing, Autoscaling, ECR, ECS, Lambda, IAM, EKS, Beanstalk and CloudFormation.',
+    ],
+  },
+  {
+    company: 'Soft Quest Incorporated',
+    role: 'Software Enginer Intern',
+    startDate: 'SEPT 2018',
+    endDate: 'MAR 2019',
+    achievements: [
+      'Produced clean, validation-ready code for given project needs.',
+      'Developed a basic Banking Web Application with Angular and PHP.',
+      'Developed a Car Racing game using JavaScript and HTML5 canvas.',
+      'Built an advanced Scientific Calculator, Inventory System, Timer, Countdown on the Web and many other self development Projects.',
+    ],
+  },
+];
+
 export default function Resume(props: IProp) {
   useEffect(() => {
     props.activeMenu(1);
@@ -26,7 +90,7 @@ export default function Resume(props: IProp) {
               </small>
             </a> */}
             <a
-              href="https://drive.google.com/file/d/1nmfoUiP1vzXIuBk8h84ylz8DO9GxhEvH/view?usp=sharing"
+              href="https://drive.google.com/file/d/1cXG3oS6vv4zkcRBs3aMensAMvf0hpyIr/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -55,11 +119,11 @@ export default function Resume(props: IProp) {
 
         <div className="skills">
           <p className="">
-            <span className="pr-2 font-bold text-white">Languages: </span> JavaScript, TypeScript, Java, Python
+            <span className="pr-2 font-bold text-white">Languages: </span> JavaScript/TypeScript, Go, Python
           </p>
           <p className="">
             <span className="pr-2 font-bold text-white">Framework/Libraries: </span> React, Vue, Nodejs, Nestjs,
-            Firebase, GraphQL, Angular
+            Firebase, GraphQL, Flask
           </p>
           <p className="">
             <span className="pr-2 font-bold text-white">Storage/Database: </span> SQL, Postgres, MongoDB, Firestore, AWS
@@ -72,12 +136,12 @@ export default function Resume(props: IProp) {
             <span className="pr-2 font-bold text-white">Tooling: </span> Linux, Git, Docker, Kubernetes
           </p>
           <p className="">
-            <span className="pr-2 font-bold text-white">Automation Tools: </span> Jenkins, Circleci, Travis-ci, GitLab
-            ci
+            <span className="pr-2 font-bold text-white">Automation Tools: </span> Jenkins, Circle CI, GitLab CI, Github
+            Workflows ci
           </p>
           <p className="">
-            <span className="pr-2 font-bold text-white">Monitoring and testing tools: </span> Cloudwatch, Stackdriver,
-            Prometheus, Graphana, ELK Stack, Locust
+            <span className="pr-2 font-bold text-white">Monitoring and testing tools: </span> Cloudwatch, Prometheus,
+            Graphana, Locust
           </p>
         </div>
 
@@ -87,109 +151,28 @@ export default function Resume(props: IProp) {
         </div>
 
         <div className="exp_container">
-          <section className="experience">
-            <p className="title">
-              Block Knowledge - Software and DevOps Engineer
-              <span>
-                <br /> DEC 2020 - CURRENT
-              </span>
-            </p>
-            <article className="description">
-              <p>
-                <span>&#x2756;</span> Working on a financial social platform that allows people to donate to Charities,
-                Churches, Schools and NGOs.
-              </p>
-              <p>
-                <span>&#x2756;</span> Worked on pipeline using Gitlab-ci to run tests, build container image, push and
-                deploy container image to AWS container service and to automate mobile app deployment to PlayStore and
-                AppStore using fastlane.
-              </p>
-              <p>
-                <span>&#x2756;</span> Integrated plaid and stripe for the backend solution.
-              </p>
-              <p>
-                <span>&#x2756;</span> Set up development, production and failover server on AWS for the web application.
-              </p>
-            </article>
-          </section>
-
-          <section className="experience">
-            <p className="title">
-              Powerjamb - Software and DevOps Engineer
-              <span>
-                <br /> JUNE 2019 - SEPT 2020
-              </span>
-            </p>
-            <article className="description">
-              <p>
-                <span>&#x2756;</span> Designed user friendly websites with tools and integration to meet multiple
-                browser, and different screens user needs.
-              </p>
-              <p>
-                <span>&#x2756;</span> Monitored automated build and continuous software integration process to
-                build/release failure resolution.
-              </p>
-              <p>
-                <span>&#x2756;</span> Used Jenkins, Docker, Kubernetes to deploy and manage microservices on AWS EKS.
-              </p>
-              <p>
-                <span>&#x2756;</span> Monitored and tested deployments.
-              </p>
-            </article>
-          </section>
-
-          <section className="experience">
-            <p className="title">
-              Kovatek - Frontend Developer
-              <span>
-                <br /> SEPT 2019 - JUNE 2020
-              </span>
-            </p>
-            <article className="description">
-              <p>I contributed in developing user interfaces for quite a number of products within three months. </p>
-              <p>
-                <span>&#x2756;</span> Developed websites compatible with multiple browsers.
-              </p>
-              <p>
-                <span>&#x2756;</span> Developed designs to meet specific requirements such as quick-loading sites with
-                particular layouts.
-              </p>
-              <p>
-                <span>&#x2756;</span> Designed and updated layouts to meet usability and performance requirements.
-              </p>
-              <p>
-                <span>&#x2756;</span> Worked with Project Manager, Developers, UI designers to resolve technical issues.
-              </p>
-            </article>
-          </section>
-
-          <section className="experience">
-            <p className="title">
-              SQI - Web Developer (Student/Intern)
-              <span>
-                <br /> SEPT 2018 - MAR 2019
-              </span>
-            </p>
-            <article className="description">
-              <p>
-                I started my journey in tech as a student/intern at Soft Quest Incorporated. Worked on various assigned
-                projects
-              </p>
-              <p>
-                <span>&#x2756;</span>Produced clean, validation-ready code for given project needs.
-              </p>
-              <p>
-                <span>&#x2756;</span> Built a basic Banking Web Application with Angular and PHP.
-              </p>
-              <p>
-                <span>&#x2756;</span> Built Car Racing game using JavaScript and HTML5 canvas.
-              </p>
-              <p>
-                <span>&#x2756;</span> Built Scientific Calculator, Timer, Countdown on the Web in my early days and many
-                other self development Projects.
-              </p>
-            </article>
-          </section>
+          {resume.map((data, idx) => {
+            return (
+              <section className="experience" key={idx}>
+                <p className="title">
+                  {data.company} - {data.role}
+                  <span>
+                    <br /> {data.startDate} - {data.endDate ? data.endDate : 'CURRENT'}
+                  </span>
+                </p>
+                <article className="description">
+                  {data.achievements.map((achievement) => {
+                    return (
+                      <p>
+                        <span>&#x2756;</span>
+                        {achievement}
+                      </p>
+                    );
+                  })}
+                </article>
+              </section>
+            );
+          })}
         </div>
 
         <div className="divider">
