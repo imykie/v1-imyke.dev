@@ -24,12 +24,11 @@ const resume: IResume[] = [
     endDate: '',
     achievements: [
       'Designed the database and system architecture for Kadogo (turn everyday purchases into charitable donations)',
-      'Leading the kadogo backend team.',
+      // 'Leading the kadogo backend team.',
       'Optimized the backend to leverage on cloud services like serverless functions and messaging systems to increase performance and prevent downtime of critical part of the application.',
       'Developed APIs for the mobile application, merchant and NGO dashboard.',
       'Facilitated the use of continuous integration and continuous deployment tools to reduce code shipping time and increase collaboration and productivity among the developers.',
       'Implemented the spare change and cashback donation algorithms.',
-      'Coached and mentored 2 interns.',
       'Set up Autoscaling, Load balancers and failover servers on AWS for development, staging, production environment.',
     ],
   },
@@ -90,7 +89,7 @@ export default function Resume(props: IProp) {
               </small>
             </a> */}
             <a
-              href="https://drive.google.com/file/d/1cXG3oS6vv4zkcRBs3aMensAMvf0hpyIr/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Q891O65KEeDLcDU0uoyDljUZXP64M4PD/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
