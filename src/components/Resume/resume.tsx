@@ -24,8 +24,8 @@ const resume: IResume[] = [
     endDate: '',
     achievements: [
       'Designed the database and system architecture for Kadogo (turn everyday purchases into charitable donations)',
-      // 'Leading the kadogo backend team.',
-      'Optimized the backend to leverage on cloud services like serverless functions and messaging systems to increase performance and prevent downtime of critical part of the application.',
+      'Leading the kadogo backend team of (2 - 3)',
+      'Optimized the backend to leverage on cloud services like serverless functions and messaging systems to increase performance and prevent downtime of the critical part of the application.',
       'Developed APIs for the mobile application, merchant and NGO dashboard.',
       'Facilitated the use of continuous integration and continuous deployment tools to reduce code shipping time and increase collaboration and productivity among the developers.',
       'Implemented the spare change and cashback donation algorithms.',
@@ -39,22 +39,22 @@ const resume: IResume[] = [
     endDate: 'DEC 2020',
     achievements: [
       'Co-designed the database and system architecture for Afide. An inclusive financial platform for daily earners.',
-      'Developed the web application that facilitate transactions and payment on the platform.',
-      'Developed 4 dashboards for end to end activity of the platforms (Admin, User, Agent, Cooperative Admin Dashboards)',
+      'Developed the web application that facilitates transactions and payment on the platform.',
+      'Developed 4 dashboards for end-to-end activity of the platforms (Admin, User, Agent, Cooperative Admin Dashboards)',
     ],
   },
   {
     company: 'Powerjamb',
-    role: 'Software and DevOps Engineer',
+    role: 'Software and DevOps Engineer (Intern, Part-time)',
     startDate: 'JUNE 2019',
     endDate: 'SEPT 2020',
     achievements: [
       'Managed infrastructure as code using AWS CloudFormation.',
-      'Redesigned the landing page.',
-      'Developed a web mobile first examination application.',
-      'Created Dockerfiles and built docker images for microservices to run on kubernetes cluster.',
-      'Created and managed the deployment of microservices cluster to EKS using docker, kubernetes, helm and Jenkins.',
-      'Experience with Amazon services such as AWS, VPC, S3, EC2 Relational Database (RDS), Document DB, Elastic Load Balancing, Autoscaling, ECR, ECS, Lambda, IAM, EKS, Beanstalk and CloudFormation.',
+      'Redesigned the landing page to 3x faster.',
+      'Developed a web mobile-first examination application.',
+      'Created Dockerfiles and built docker images for the microservices to run on Kubernetes cluster.',
+      'Created and managed the deployment of microservices cluster to EKS using Docker, Kubernetes, Helm, and Jenkins.',
+      'Experience with Amazon services such as AWS, VPC, S3, EC2 Relational Database (RDS), Document DB, Elastic Load Balancing, Autoscaling, ECR, ECS, Lambda, IAM, EKS, Beanstalk, and CloudFormation.',
     ],
   },
   {
@@ -66,7 +66,7 @@ const resume: IResume[] = [
       'Produced clean, validation-ready code for given project needs.',
       'Developed a basic Banking Web Application with Angular and PHP.',
       'Developed a Car Racing game using JavaScript and HTML5 canvas.',
-      'Built an advanced Scientific Calculator, Inventory System, Timer, Countdown on the Web and many other self development Projects.',
+      'Built an advanced Scientific Calculator, Inventory System, Timer, Countdown on the Web and many other self-development Projects.',
     ],
   },
 ];
@@ -100,14 +100,13 @@ export default function Resume(props: IProp) {
           </div>
         </div>
 
-        <p className="subheading">Software Engineer | DevOps Engineer</p>
+        <p className="subheading">Software Engineering | Cloud DevOps</p>
 
         <div className="summary">
           <p>
-            I'm a Problem Solving Software Engineer with background working effectively in dynamic environments. Proud
-            team player focused on achieving project objectives with speed and accuracy. I design quality, great user
-            experience and scalable products. Proficient with automating, configuring management and monitoring tools,
-            and in developing CI/CD pipelines.
+            I'm a problem solving Software Engineer with background working effectively in dynamic environments. Proud
+            team player focused on achieving project objectives with speed and accuracy. Proficient with automating,
+            configuring management and monitoring tools, and in developing CI/CD pipelines.
           </p>
         </div>
 
@@ -247,7 +246,7 @@ export default function Resume(props: IProp) {
           <section className="experience">
             <article className="description">
               <p>
-                Some of my works can be found <span> </span>
+                Some selected projects can be found <span> </span>
                 <span className="underline">
                   <Link to="/projects"> here</Link>
                 </span>
