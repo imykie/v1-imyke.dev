@@ -89,7 +89,7 @@ export default function Resume(props: IProp) {
               </small>
             </a> */}
             <a
-              href="https://drive.google.com/file/d/1Q891O65KEeDLcDU0uoyDljUZXP64M4PD/view?usp=sharing"
+              href="https://drive.google.com/file/d/1r9hWZZdTtBfDASNx9qKv0krgLxr90Zxt/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
