@@ -117,7 +117,7 @@ const projects: IProject[] = [
 
 export default function Projects(props: IProp) {
   useEffect(() => {
-    props.activeMenu(0);
+    props.activeMenu(1);
   }, []);
 
   return (

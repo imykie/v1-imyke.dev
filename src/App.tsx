@@ -41,20 +41,19 @@ function App() {
 
   return (
     <div className="App">
-      {isLoading && (
+      {isLoading ? (
         <div className="flex justify-center align-middle h-full w-full">
           <img className="w-16 loader" src={logo} alt="loader" />
         </div>
-      )}
-      {!isLoading && (
+      ) : (
         <Router>
           <div className="mobile_container">
             <Header />
             <div>
               <Switch>
                 <Route exact path="/" render={(props) => <Mobile menu={menu} />} />
-                <Route exact path="/projects" render={(props) => <Projects menu={menu} activeMenu={activeMenu} />} />
                 <Route exact path="/resume" render={(props) => <Resume menu={menu} activeMenu={activeMenu} />} />
+                <Route exact path="/projects" render={(props) => <Projects menu={menu} activeMenu={activeMenu} />} />
                 <Route exact path="/contact" render={(props) => <Contact menu={menu} activeMenu={activeMenu} />} />
                 <Route component={Error} />
               </Switch>
@@ -79,9 +78,9 @@ function App() {
             <div className="main">
               <div className="pages_container">
                 <Switch>
-                  <Route exact path="/" render={(props) => <Projects menu={menu} activeMenu={activeMenu} />} />
-                  <Route exact path="/projects" render={(props) => <Projects menu={menu} activeMenu={activeMenu} />} />
+                  <Route exact path="/" render={(props) => <Resume menu={menu} activeMenu={activeMenu} />} />
                   <Route exact path="/resume" render={(props) => <Resume menu={menu} activeMenu={activeMenu} />} />
+                  <Route exact path="/projects" render={(props) => <Projects menu={menu} activeMenu={activeMenu} />} />
                   <Route exact path="/contact" render={(props) => <Contact menu={menu} activeMenu={activeMenu} />} />
                   <Route component={Error} />
                 </Switch>
