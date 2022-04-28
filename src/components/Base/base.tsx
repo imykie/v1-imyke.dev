@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './base.scss';
-import myPic from '../../assets/svgs/my-pic.jpg';
-import navLine from '../../assets/svgs/menu-line.svg';
 import arrow from '../../assets/svgs/arrow.svg';
+import navLine from '../../assets/svgs/menu-line.svg';
+import myPic from '../../assets/svgs/my-pic.jpg';
+import './base.scss';
 
 export default function Base({ menu }: any) {
   return (
@@ -39,6 +39,15 @@ export default function Base({ menu }: any) {
         <ul>
           <li className={menu[0]}>
             <small>
+              00
+              <Link to="/resume">
+                <img src={navLine} alt="menu bullet" /> RESUME
+              </Link>
+            </small>
+          </li>
+          
+          <li className={menu[1]}>
+            <small>
               01
               <Link to="/projects">
                 <img src={navLine} alt="menu bullet" /> PROJECTS
@@ -46,18 +55,9 @@ export default function Base({ menu }: any) {
             </small>
           </li>
 
-          <li className={menu[1]}>
-            <small>
-              02
-              <Link to="/resume">
-                <img src={navLine} alt="menu bullet" /> RESUME
-              </Link>
-            </small>
-          </li>
-
           <li className={menu[2]}>
             <small>
-              03
+              02
               <Link to="/contact">
                 <img src={navLine} alt="menu bullet" /> CONTACT
               </Link>

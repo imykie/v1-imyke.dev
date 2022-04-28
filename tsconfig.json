@@ -14,17 +14,21 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
+    "types": ["node"],
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"],
-      "@/assets/*": ["./src/assets/*"],
-      "@/shared/*": ["./src/shared/*"],
-      "@/constants/*": ["./src/constants/*"],
-      "@/context/*": ["./src/context/*"],
-      "@/hooks/*": ["./src/hooks/*"],
-      "@/pages/*": ["./src/pages/*"],
-      "@/styles/*": ["./src/styles/*"],
-      "@/utils/*": ["./src/utils/*"]
-    },
+      "~/*": ["./src/*"],
+      "@/assets/*": ["src/assets/*"],
+      "@/shared/*": ["src/shared/*"],
+      "@/constants/*": ["src/constants/*"],
+      "@/context/*": ["src/context/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/features/*": ["src/features/*"],
+      "@/firebase/*": ["src/firebase/*"],
+      "@/styles/*": ["src/styles/*"],
+      "@/store/*": ["src/store/*"],
+      "@/utils/*": ["src/utils/*"]
+    }
   },
   "include": ["./src"]
 }
