@@ -57,10 +57,10 @@ const workExperiences: WorkExperience[] = [
   },
   {
     company: 'JP Morgan Chase',
-    role: 'Incoming Software Engineer Intern',
+    role: 'Software Engineer Intern',
     startDate: 'JUN 2022',
     endDate: '',
-    achievements: ['Summer Analyst (Summer)'],
+    achievements: ['Software Engineer Program Summer Analyst'],
   },
   {
     company: 'Block Knowledge',
