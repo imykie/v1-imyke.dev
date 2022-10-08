@@ -57,7 +57,7 @@ export default function Header() {
                 hello@imyke.dev
               </a>
               <div className="social_icons">
-                <a href="https://github.com/MichaelOlatunji">
+                <a href="https://github.com/imykie">
                   <i className="fab fa-github"></i>
                 </a>
                 <a href="https://twitter.com/_imyke">
