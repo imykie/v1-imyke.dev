@@ -28,39 +28,47 @@ export type Language = {
   level: string;
 };
 
-export interface Resume {
+export type Resume = {
   name: string;
-  title: string;
-  intro: string;
+  bio: string[];
   workExperiences: WorkExperience[];
   skills: Skill[];
   educations: Education[];
   certifications: Certification[];
   languages: Language[];
   hobbies: string[];
-}
+};
 
 const name = 'Michael Olatunji';
 
-const title = 'Software Engineer';
-
-const intro =
-  "I'm a problem solving Software Engineer with background working effectively in dynamic environments. Proud team player focused on achieving project objectives with speed and accuracy. Proficient with automating, configuring management and monitoring tools, and in developing CI/CD pipelines.";
+const bio = [
+  'As a Computer Engineering student and Software Engineer, I am passionate about using technology to solve real-world problems. With a strong foundation in Computer Science and Engineering principles and programming languages such as JavaScript/TypeScript, Python and C++, I am constantly seeking opportunities to learn and apply my skills in new and innovative ways.',
+  'In addition to my academic pursuits, I have completed internships at leading technology companies, where I have gained valuable experience working on complex software projects. I am a team player who enjoys collaborating with others and sharing knowledge.',
+  'I am excited to continue learning and growing as a software engineer, and I am eager to apply my skills and knowledge to tackle challenging problems and make a positive impact on the world.',
+];
 
 const workExperiences: WorkExperience[] = [
   {
-    company: 'Cruise Automation (GM)',
-    role: 'Incoming Software Engineer Intern',
+    company: 'Cruise LLC',
+    role: 'Software Engineer Intern',
     startDate: 'SEP 2022',
     endDate: '',
-    achievements: ['Simulation Team (Fall)'],
+    achievements: [
+      'Contributed to Cruise AI Simulation Platform Tools which empowers AV engineers to run simulations at scale, accelerating the development of Autonomous Vehicles by more than 4x.',
+      'Implemented NPCs objective profile conversion features for Planning Simulation (PSIM) and Matrix on the Scenario Editor Software, which prevent data loss while editing scenarios and maintain states between NPCs objective profiles.',
+      'Helping to build the world’s most advanced self-driving vehicles to safely connect people with places, things, and experiences they care about.',
+    ],
   },
   {
-    company: 'JP Morgan Chase',
+    company: 'JP Morgan Chase & Co',
     role: 'Software Engineer Intern',
     startDate: 'JUN 2022',
-    endDate: '',
-    achievements: ['Software Engineer Program Summer Analyst'],
+    endDate: 'AUG 2022',
+    achievements: [
+      'Designed and developed the prototype of a new Global Search Platform that enables searching of internal trades data to make search speed at least 10x faster and flexible search queries possible using Spring Boot and Elasticsearch.',
+      'Configured and deployed Kafka Connect (sink connector) to ship data from the Kafka Cluster to the Elasticsearch Cluster.',
+      'Automated the visualization and analytics of data as they are shipped in real-time using Kibana.',
+    ],
   },
   {
     company: 'Block Knowledge',
@@ -119,41 +127,37 @@ const workExperiences: WorkExperience[] = [
 const skills: Skill[] = [
   {
     title: 'Languages',
-    body: ['JavaScript/TypeScript', 'Python', 'Go'],
+    body: ['JavaScript/TypeScript', 'Python', 'Go', 'C++'],
   },
   {
     title: 'Frameworks/Libraries',
-    body: ['React', 'Vue', 'Nodejs', 'Nestjs', 'Firebase', 'GraphQL', 'Flask'],
+    body: ['React', 'Vue', 'Nodejs', 'Nestjs', 'GraphQL', 'Flask'],
   },
   {
     title: 'Storages/Databases',
-    body: ['SQL', 'Postgres', 'MongoDB', 'Firestore', 'AWS S3', 'Cloud Storage'],
+    body: ['SQL', 'PostgreSQL', 'MongoDB', 'AWS S3', 'Kafka', 'ElasticSearch'],
   },
   {
     title: 'Tooling',
-    body: ['Linux', 'Git', 'Docker', 'CloudFormation', 'Prometheus', 'Graphana'],
-  },
-  {
-    title: 'Automation Tools',
-    body: ['Jenkins', 'Circle CI', 'GitLab CI', 'Github Workflows'],
+    body: ['Linux', 'Git', 'Docker', 'Kubernetes', 'Kibana'],
   },
 ];
 
 const educations: Education[] = [
   {
-    title: 'B.Sc Computer Engineering at Obafemi Awolowo University, Ile-Ife',
+    title: 'B.Sc Computer Engineering at Obafemi Awolowo University',
     startDate: 'MAR 2019',
     endDate: 'CURRENT',
     relevant: [
       'Introduction to Computing',
       'Introduction to Programming',
       'Digital Computer Systems',
-      'Calculus I & II',
+      'Calculus I & II & III',
       'Vector Analysis',
     ],
   },
   {
-    title: 'Smith Internation Baptist Academy, Ogbomoso',
+    title: 'Smith International Baptist Academy, Ogbomoso',
     startDate: 'SEP 2012',
     endDate: 'JUL 2018',
     relevant: [],
@@ -186,12 +190,11 @@ const languages: Language[] = [
   },
 ];
 
-const hobbies = ['Learning', 'Music', 'Football'];
+const hobbies = ['Learning', 'Music', 'Football (Soccer)'];
 
 export const resume: Resume = {
   name,
-  title,
-  intro,
+  bio,
   workExperiences,
   skills,
   educations,

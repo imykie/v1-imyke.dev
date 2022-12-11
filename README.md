@@ -3,7 +3,7 @@
 #### Note: This project uses Typescript, SASS and strict prettier/eslint rules. You can edit the rules in `.eslintrc.js` file
 This is a portfolio website project available at https://imyke.dev
 
-To clone run `git clone https://github.com/MichaelOlatunji/imyke.dev`
+To clone run `git clone https://github.com/imykie/imyke.dev`
 
 After cloning
 
