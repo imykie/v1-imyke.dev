@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import myPic from '../../assets/imgs/my-pic.jpg';
 import arrow from '../../assets/svgs/arrow.svg';
 import navLine from '../../assets/svgs/menu-line.svg';
-import myPic from '../../assets/imgs/my-pic.jpg';
 import './base.scss';
 
 export default function Base({ menu }: any) {
@@ -21,8 +21,10 @@ export default function Base({ menu }: any) {
         <div className="description">
           <p>
             <span>
-              I'm a <span className="highlight">Software Engineer</span>. I like to craft solid, scalable and automated
-              products with great user experiences.
+              I'm a <span className="highlight">Software Engineer</span> and{' '}
+              <span className="highlight">Computer Engineering Student</span> with passion for problem-solving, strong
+              foundation in computer science principles and proven track record of delivering high-quality and scalable
+              code.
             </span>
             {/* <span className="highlight">Javascript</span> */}
           </p>
@@ -45,7 +47,7 @@ export default function Base({ menu }: any) {
               </Link>
             </small>
           </li>
-          
+
           <li className={menu[1]}>
             <small>
               01
