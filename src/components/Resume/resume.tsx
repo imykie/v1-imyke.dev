@@ -3,10 +3,11 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Helmet from '../Utils/SEO/helmet';
 import './resume.scss';
-interface ResumeProp {
+
+type ResumeProp = {
   menu?: string[];
   activeMenu: (arg: number) => void;
-}
+};
 
 export default function Resume(props: ResumeProp) {
   useEffect(() => {
@@ -21,7 +22,7 @@ export default function Resume(props: ResumeProp) {
           <h2>{resume.name}</h2>
           <div className="buttons">
             <a
-              href="https://drive.google.com/file/d/1r9hWZZdTtBfDASNx9qKv0krgLxr90Zxt/view?usp=sharing"
+              href="https://drive.google.com/file/d/1lch5kE4VCDeZrjwq9myHgN7bK7zmgkee/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -32,10 +33,10 @@ export default function Resume(props: ResumeProp) {
           </div>
         </div>
 
-        <p className="subheading">{resume.title}</p>
-
         <div className="summary">
-          <p>{resume.intro}</p>
+          {resume.bio.map((paragraph, key) => (
+            <p key={key}>{paragraph}</p>
+          ))}
         </div>
 
         <div className="divider">
@@ -44,8 +45,8 @@ export default function Resume(props: ResumeProp) {
         </div>
 
         <div className="skills">
-          {resume.skills.map((skill, idx) => (
-            <p key={`skill-${idx}`} className="">
+          {resume.skills.map((skill, key) => (
+            <p key={`skill-${key}`} className="">
               <span className="pr-2 font-bold text-white">{skill.title}: </span>{' '}
               {skill.body.map((val, i) => `${val}, `)}
             </p>
@@ -58,8 +59,8 @@ export default function Resume(props: ResumeProp) {
         </div>
 
         <div className="exp_container">
-          {resume.workExperiences.map((experience, idx) => (
-            <section className="experience" key={idx}>
+          {resume.workExperiences.map((experience, key) => (
+            <section className="experience" key={key}>
               <p className="title">
                 {experience.company} - {experience.role}
                 <span>
@@ -85,8 +86,8 @@ export default function Resume(props: ResumeProp) {
 
         <div className="exp_container">
           <section className="experience">
-            {resume.educations.map((education, idx) => (
-              <p key={`education-${idx}`} className="title">
+            {resume.educations.map((education, key) => (
+              <p key={`education-${key}`} className="title">
                 {education.title}
                 <br />
                 <span>
@@ -104,8 +105,8 @@ export default function Resume(props: ResumeProp) {
 
         <div className="exp_container">
           <section className="experience">
-            {resume.certifications.map((certification, idx) => (
-              <p key={`certification-${idx}`} className="title">
+            {resume.certifications.map((certification, key) => (
+              <p key={`certification-${key}`} className="title">
                 {certification.title} <br />
                 <span>{certification.date}</span>
               </p>
@@ -120,8 +121,8 @@ export default function Resume(props: ResumeProp) {
 
         <div className="exp_container">
           <section className="experience">
-            {resume.languages.map((language, idx) => (
-              <p className="title">
+            {resume.languages.map((language, key) => (
+              <p key={key} className="title">
                 {language.name} -<span>{language.level}</span>
               </p>
             ))}
@@ -137,8 +138,8 @@ export default function Resume(props: ResumeProp) {
           <section className="experience">
             <article className="description">
               <p>
-                {resume.hobbies.map((hobby, idx) => (
-                  <span>{hobby}, </span>
+                {resume.hobbies.map((hobby, key) => (
+                  <span key={key}>{hobby}, </span>
                 ))}
               </p>
             </article>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import arrow from '../../assets/svgs/arrow.svg';
 import navLine from '../../assets/svgs/menu-line.svg';
-import myPic from '../../assets/svgs/my-pic.jpg';
+import myPic from '../../assets/imgs/my-pic.jpg';
 import './base.scss';
 
 export default function Base({ menu }: any) {

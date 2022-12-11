@@ -5,7 +5,7 @@ import Project from '../Utils/Project/project';
 import Helmet from '../Utils/SEO/helmet';
 import './projects.scss';
 
-interface IProject {
+type Project = {
   id: string;
   title: string;
   description: string;
@@ -15,19 +15,19 @@ interface IProject {
   stack: string;
   isPrivate: boolean;
   isLive: boolean;
-}
+};
 
-interface IProp {
+type Prop = {
   menu?: string[];
   activeMenu: (arg: number) => void;
-}
+};
 
-const projects: IProject[] = [
+const projects: Project[] = [
   {
     id: uuid(),
     title: 'imyke.dev',
     description: 'My Portfolio Website',
-    github: 'https://github.com/MichaelOlatunji/imyke.dev',
+    github: 'https://github.com/imykie/imyke.dev',
     live: 'https://imyke.dev',
     stack: 'React + TypeScript + SASS',
     isPrivate: false,
@@ -49,16 +49,6 @@ const projects: IProject[] = [
     description: 'A platform for brands and shoppers',
     github: '',
     live: 'https://brandzoos.com',
-    stack: 'React + TypeScript + GraphQL + Nestjs + Postgres',
-    isPrivate: true,
-    isLive: true,
-  },
-  {
-    id: uuid(),
-    title: 'Listed.ng',
-    description: 'A platform to find and connect with businesses',
-    github: '',
-    live: 'https://listed.ng/',
     stack: 'React + TypeScript + GraphQL + Nestjs + Postgres',
     isPrivate: true,
     isLive: true,
@@ -97,7 +87,7 @@ const projects: IProject[] = [
     id: uuid(),
     title: 'Capstone Project',
     description: 'Cloud DevOps Nanodegree Capstone Project (Udacity)',
-    github: 'https://github.com/MichaelOlatunji/Cloud_DevOps_Nanodegree_Capstone',
+    github: 'https://github.com/imykie/Cloud_DevOps_Nanodegree_Capstone',
     live: '',
     stack: 'AWS + Jenkins + Docker + Kubernetes + Python',
     isPrivate: false,
@@ -107,7 +97,7 @@ const projects: IProject[] = [
     id: uuid(),
     title: 'Operationalized ML API',
     description: 'Automated CI-CD pipeline for ML API that predicts housing price in Boston',
-    github: 'https://github.com/MichaelOlatunji/operationalize-ML-api',
+    github: 'https://github.com/imykie/operationalize-ML-api',
     live: '',
     stack: 'Flask + AWS + Jenkins + Docker + Kubernetes + Circle CI',
     isPrivate: false,
@@ -115,7 +105,7 @@ const projects: IProject[] = [
   },
 ];
 
-export default function Projects(props: IProp) {
+export default function Projects(props: Prop) {
   useEffect(() => {
     props.activeMenu(1);
   }, []);
