@@ -14,7 +14,12 @@ module.exports = {
     'h-16',
     'w-48', 
     'h-48', 
-    'rounded-full'
+    'rounded-full',
+    'flex', 
+    'justify-center', 
+    'align-middle', 
+    'h-full', 
+    'w-full',
   ],
   purge: [],
   target: 'relaxed',

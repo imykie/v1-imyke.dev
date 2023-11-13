@@ -26,7 +26,6 @@ export default function Base({ menu }: any) {
               foundation in computer science principles and proven track record of delivering high-quality and scalable
               code.
             </span>
-            {/* <span className="highlight">Javascript</span> */}
           </p>
         </div>
 
