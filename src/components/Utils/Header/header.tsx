@@ -44,17 +44,12 @@ export default function Header() {
                   Résumé
                 </Link>
               </li>
-              <li>
-                <Link to="/contact" onClick={toggleMenu}>
-                  Contact
-                </Link>
-              </li>
             </ul>
 
             <div className="social_box">
               <h3>Connect With Me</h3>
-              <a href="mailto:hello@imyke.dev" className="mt-4">
-                hello@imyke.dev
+              <a href="mailto:myke.olatunji@gmail.com" className="mt-4">
+                myke.olatunji@gmail.com
               </a>
               <div className="social_icons">
                 <a href="https://github.com/imykie">

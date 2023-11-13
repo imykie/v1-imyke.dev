@@ -22,7 +22,7 @@ export default function Base({ menu }: any) {
           <p>
             <span>
               I'm a <span className="highlight">Software Engineer</span> and{' '}
-              <span className="highlight">Computer Engineering Student</span> with passion for problem-solving, strong
+              <span className="highlight">a junior Computer Engineering major</span> with passion for problem-solving, strong
               foundation in computer science principles and proven track record of delivering high-quality and scalable
               code.
             </span>
@@ -53,15 +53,6 @@ export default function Base({ menu }: any) {
               01
               <Link to="/projects">
                 <img src={navLine} alt="menu bullet" /> PROJECTS
-              </Link>
-            </small>
-          </li>
-
-          <li className={menu[2]}>
-            <small>
-              02
-              <Link to="/contact">
-                <img src={navLine} alt="menu bullet" /> CONTACT
               </Link>
             </small>
           </li>
