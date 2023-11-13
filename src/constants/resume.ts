@@ -54,7 +54,7 @@ const workExperiences: WorkExperience[] = [
     startDate: 'JUN 2023',
     endDate: 'AUG 2023',
     achievements: [
-      'Co-Led a team of 3 interns, designing and developing an end-to-end social network graph project for employees to find how they are connected to other people within the firm which improves employee experience.',
+      'Co-Led a team of 3 interns, designing and developing an end-to-end social network graph project for employees to find how they are connected to other people within the firm, improving employee experience.',
     ],
   },
   {
