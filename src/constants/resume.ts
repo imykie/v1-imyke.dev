@@ -13,7 +13,7 @@ export type Skill = {
 
 export type Education = {
   title: string;
-  startDate: string;
+  startDate?: string;
   endDate: string;
   relevant: string[];
 };
@@ -42,21 +42,31 @@ export type Resume = {
 const name = 'Michael Olatunji';
 
 const bio = [
-  'As a Computer Engineering student and Software Engineer, I am passionate about using technology to solve real-world problems. With a strong foundation in Computer Science and Engineering principles and programming languages such as JavaScript/TypeScript, Python and C++, I am constantly seeking opportunities to learn and apply my skills in new and innovative ways.',
+  'As a Computer Engineering student and Software Engineer, I am passionate about using technology to solve real-world problems. With a strong foundation in Computer Science and Engineering principles and programming languages such as JavaScript, Python, C++ and Java. I am constantly seeking opportunities to learn and apply my skills in new and innovative ways.',
   'In addition to my academic pursuits, I have completed internships at leading technology companies, where I have gained valuable experience working on complex software projects. I am a team player who enjoys collaborating with others and sharing knowledge.',
   'I am excited to continue learning and growing as a software engineer, and I am eager to apply my skills and knowledge to tackle challenging problems and make a positive impact on the world.',
 ];
 
 const workExperiences: WorkExperience[] = [
   {
+    company: 'JP Morgan Chase & Co',
+    role: 'Software Engineer Intern',
+    startDate: 'JUN 2023',
+    endDate: 'AUG 2023',
+    achievements: [
+      'Co-Led a team of 3 interns, designing and developing an end-to-end social network graph project for employees to find how they are connected to other people within the firm which improves employee experience.',
+    ],
+  },
+  {
     company: 'Cruise LLC',
     role: 'Software Engineer Intern',
     startDate: 'SEP 2022',
-    endDate: '',
+    endDate: 'DEC 2022',
     achievements: [
+      'Helped built the world’s most advanced self-driving vehicles to safely connect people with places, things, and experiences they care about.',
+      'Collaborated alongside multiple teams to bring forth multiple deliverables that improved end-to-end metrics gathering, enabling the Simulation department to measure the impact of its various efforts on key success metrics.',
       'Contributed to Cruise AI Simulation Platform Tools which empowers AV engineers to run simulations at scale, accelerating the development of Autonomous Vehicles by more than 4x.',
       'Implemented NPCs objective profile conversion features for Planning Simulation (PSIM) and Matrix on the Scenario Editor Software, which prevent data loss while editing scenarios and maintain states between NPCs objective profiles.',
-      'Helping to build the world’s most advanced self-driving vehicles to safely connect people with places, things, and experiences they care about.',
     ],
   },
   {
@@ -77,7 +87,8 @@ const workExperiences: WorkExperience[] = [
     endDate: 'DEC 2021',
     achievements: [
       'Designed the database and system architecture for Kadogo (turn everyday purchases into charitable donations)',
-      'Led the kadogo backend team of 2/3 people',
+      'Led the kadogo backend team of 2 - 3 people',
+      'Built the entire backend of the MVP version, which raised $100,000 in funding.',
       'Optimized the backend to leverage on cloud services like serverless functions and messaging systems to increase performance and prevent downtime of the critical part of the application.',
       'Developed APIs for the mobile application, merchant and NGO dashboard.',
       'Facilitated the use of continuous integration and continuous deployment tools to reduce code shipping time and increase collaboration and productivity among the developers.',
@@ -85,20 +96,9 @@ const workExperiences: WorkExperience[] = [
       'Set up Autoscaling, Load balancers and failover servers on AWS for development, staging, production environment.',
     ],
   },
-  // {
-  //   company: 'FarmKonnect Agric Business Nig. Ltd',
-  //   role: 'Software Engineer (Contract)',
-  //   startDate: 'SEP 2020',
-  //   endDate: 'DEC 2020',
-  //   achievements: [
-  //     'Co-designed the database and system architecture for Afide. An inclusive financial platform for daily earners.',
-  //     'Developed the web application that facilitates transactions and payment on the platform.',
-  //     'Developed 4 dashboards for end-to-end activity of the platforms (Admin, User, Agent, Cooperative Admin Dashboards)',
-  //   ],
-  // },
   {
     company: 'Powerjamb',
-    role: 'Software and DevOps Engineer (Intern, Part-time)',
+    role: 'Software and DevOps Engineer Intern',
     startDate: 'JUN 2019',
     endDate: 'SEP 2020',
     achievements: [
@@ -127,27 +127,26 @@ const workExperiences: WorkExperience[] = [
 const skills: Skill[] = [
   {
     title: 'Languages',
-    body: ['JavaScript/TypeScript', 'Python', 'Go', 'C++'],
+    body: ['JavaScript', 'TypeScript', 'Python', 'C++', 'Java', 'Go'],
   },
   {
     title: 'Frameworks/Libraries',
-    body: ['React', 'Vue', 'Nodejs', 'Nestjs', 'GraphQL', 'Flask'],
+    body: ['React', 'Vue', 'Nodejs', 'Nestjs', 'Nextjs', 'GraphQL', 'Flask'],
   },
   {
     title: 'Storages/Databases',
-    body: ['SQL', 'PostgreSQL', 'MongoDB', 'AWS S3', 'Kafka', 'ElasticSearch'],
+    body: ['SQL', 'PostgreSQL', 'MongoDB', 'Kafka', 'ElasticSearch', 'Neo4j'],
   },
   {
     title: 'Tooling',
-    body: ['Linux', 'Git', 'Docker', 'Kubernetes', 'Kibana'],
+    body: ['Linux', 'Git', 'Docker', 'Kubernetes', 'AWS', 'GCP'],
   },
 ];
 
 const educations: Education[] = [
   {
     title: 'B.Sc Computer Engineering at Obafemi Awolowo University',
-    startDate: 'MAR 2019',
-    endDate: 'CURRENT',
+    endDate: 'MAY 2025',
     relevant: [
       'Introduction to Computing',
       'Introduction to Programming',
@@ -190,7 +189,7 @@ const languages: Language[] = [
   },
 ];
 
-const hobbies = ['Learning', 'Music', 'Football (Soccer)'];
+const hobbies = ['Learning', 'Playing the piano', 'Lifting', 'Football/Soccer'];
 
 export const resume: Resume = {
   name,

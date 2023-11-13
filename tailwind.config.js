@@ -1,8 +1,21 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: ['./src/**/*.{js,ts,jsx,tsx}', './index.html'],
   future: {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
+  safelist: [
+    'text-white',
+    'font-bold',
+    'pr-2',
+    'w-32',
+    'w-16', 
+    'h-16',
+    'w-48', 
+    'h-48', 
+    'rounded-full'
+  ],
   purge: [],
   target: 'relaxed',
   prefix: '',

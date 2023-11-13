@@ -91,7 +91,7 @@ export default function Resume(props: ResumeProp) {
                 {education.title}
                 <br />
                 <span>
-                  {education.startDate} - {education.endDate}
+                  {education.startDate ? `${education.startDate} - ` : ''} {education.endDate}
                 </span>
               </p>
             ))}

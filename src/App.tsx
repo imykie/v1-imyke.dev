@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
 import logo from './assets/svgs/m-imyke.svg';
 import Base from './components/Base/base';
@@ -46,17 +46,17 @@ function App() {
           <img className="w-16 loader" src={logo} alt="loader" />
         </div>
       ) : (
-        <Router>
+        <BrowserRouter>
           <div className="mobile_container">
             <Header />
             <div>
-              <Switch>
-                <Route exact path="/" render={(props) => <Mobile menu={menu} />} />
-                <Route exact path="/resume" render={(props) => <Resume menu={menu} activeMenu={activeMenu} />} />
-                <Route exact path="/projects" render={(props) => <Projects menu={menu} activeMenu={activeMenu} />} />
-                <Route exact path="/contact" render={(props) => <Contact menu={menu} activeMenu={activeMenu} />} />
-                <Route component={Error} />
-              </Switch>
+              <Routes>
+                <Route path="/" element={<Mobile menu={menu} />} />
+                <Route path="/resume" element={<Resume menu={menu} activeMenu={activeMenu} />} />
+                <Route path="/projects" element={<Projects menu={menu} activeMenu={activeMenu} />} />
+                <Route path="/contact" element={<Contact menu={menu} activeMenu={activeMenu} />} />
+                <Route element={<Error />} />
+              </Routes>
             </div>
             <div className="social_buttons">
               <a href="https://github.com/imykie" target="_blank" rel="noopener noreferrer">
@@ -77,17 +77,17 @@ function App() {
             </div>
             <div className="main">
               <div className="pages_container">
-                <Switch>
-                  <Route exact path="/" render={(props) => <Resume menu={menu} activeMenu={activeMenu} />} />
-                  <Route exact path="/resume" render={(props) => <Resume menu={menu} activeMenu={activeMenu} />} />
-                  <Route exact path="/projects" render={(props) => <Projects menu={menu} activeMenu={activeMenu} />} />
-                  <Route exact path="/contact" render={(props) => <Contact menu={menu} activeMenu={activeMenu} />} />
-                  <Route component={Error} />
-                </Switch>
+                <Routes>
+                  <Route path="/" element={<Resume menu={menu} activeMenu={activeMenu} />} />
+                  <Route path="/resume" element={<Resume menu={menu} activeMenu={activeMenu} />} />
+                  <Route path="/projects" element={<Projects menu={menu} activeMenu={activeMenu} />} />
+                  <Route path="/contact" element={<Contact menu={menu} activeMenu={activeMenu} />} />
+                  <Route element={<Error />} />
+                </Routes>
               </div>
             </div>
           </div>
-        </Router>
+        </BrowserRouter>
       )}
     </div>
   );
